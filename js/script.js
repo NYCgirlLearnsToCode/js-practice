@@ -65,3 +65,38 @@ takeOrder('bacon','cheesy');
 takeOrder('peppers', 'thick');
 console.log(getSubTotal(orderCount));
 console.log(getTotal());
+
+// Practice with global scope & functional scope(local scope)----------------
+function myApartment() {
+	var myCoffeeMaker = 'Aeropress';
+	
+	var myCloset = 'Extra coats in the back';
+	
+	var myRefridgerator = 'Filled with veggies and dark chocolate.';
+	var myDog = 'Nikko';
+	var buildingPhone = '(481) 516-2342';
+}
+var buildingAddress = '150 E 14th St, New York, NY';
+var buildingLaundryCode = 4927;
+var buildingPhone = '(481) 516-2342';
+
+
+
+
+
+
+// Do not edit the code after this line
+console.log("**Apartment Building Information**");
+console.log("Laundry code: " + buildingLaundryCode + "\nPhone: " + buildingPhone + "\nMailing address: " + buildingAddress);
+
+// Practiced .push() function to add to end of array & .pop() function to remove last element from end of array-------
+var bucketList= ['make an impact on the world','take care of my family', 'take care of myself'];
+console.log(bucketList);
+var listItem = bucketList[0];
+listItem = bucketList[3];
+console.log(bucketList[3]);
+console.log(bucketList.length);
+bucketList.push('see the world','experience life');
+console.log(bucketList);
+bucketList.pop();
+console.log(bucketList);
