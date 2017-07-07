@@ -100,3 +100,26 @@ bucketList.push('see the world','experience life');
 console.log(bucketList);
 bucketList.pop();
 console.log(bucketList);
+
+// For Loop-------
+var vacationSpots = ['Korea', 'Taiwan', 'Thailand'];
+for(var i = 0; i<vacationSpots.length; i++){
+console.log('I would love to visit ' +vacationSpots[i]);
+}
+//backwards for loop
+var vacationSpots = ['Korea', 'Taiwan', 'Thailand'];
+for(var i = vacationSpots.length; i>=0; i--){
+console.log('I would love to visit ' +vacationSpots[i]);
+}
+
+// For Loop within a for loop, logging the match-----------
+var myPlaces = ['Taiwan','Los Angeles', 'Thailand'];
+var friendPlaces = ['Los Angeles', 'Italy', 'London'];
+for(var i = 0; i<myPlaces.length; i++){
+  console.log(myPlaces[i]);
+  for(var j = 0; j<friendPlaces.length; j++){
+    if(myPlaces[i]===friendPlaces[j]){
+    console.log('Match: '+ myPlaces[i]);
+    }
+  }
+}
