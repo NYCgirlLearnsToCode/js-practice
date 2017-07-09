@@ -123,3 +123,37 @@ for(var i = 0; i<myPlaces.length; i++){
     }
   }
 }
+
+//while loops
+var cards = ['Diamond', 'Spade', 'Heart', 'Club'];
+var currentCard = 'Heart';
+while(currentCard !== 'Spade'){
+  console.log(currentCard);
+  var randomNumber = Math.floor(Math.random()*10);
+  currentCard = cards[randomNumber];
+}
+console.log('Found a Spade');
+/*for loops allow us to repeat a block of code a known amount of times.
+We can use a for loop inside another for loop to compare two lists.
+while loops are for looping over a code block an unknown amount of times.*/
+
+//selecting a div with class element skillset with js
+var skillset = document.getElementsByClassName('skillset');
+alert(skillset);
+
+//Using jQuery to select elements from the DOM
+function main(){
+  var $skillset = $('.skillset');
+}
+alert($skillset);
+$(document).ready(main);
+
+// Fade in effect
+function main() {
+  $('.skillset').hide();
+  $('.skillset').fadeIn(1000);
+}
+
+$(document).ready(main);
+
+$('projects-button').toggleClass('active');
